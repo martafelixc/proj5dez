@@ -41,9 +41,11 @@
             $("#login").fadeOut(5000);
             $("#pass").fadeOut(10000);
             $("img").slideDown( 10000 ); //.slideUp( 300 ).delay( 800 ).fadeIn( 400 );          
-        });  
-                    
-    //INCLUIR EFEITO ANIMATE           
+        });
+        $("img").mouseover(function(){
+            $(this).animate('font-size','+=8');
+        });
+                     
 });
     });
     </script>

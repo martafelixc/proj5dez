@@ -41,19 +41,26 @@
             $("#login").fadeOut(5000);
             $("#pass").fadeOut(10000);
             $("img").slideDown( 10000 ); //.slideUp( 300 ).delay( 800 ).fadeIn( 400 );          
-        });  
-                    
-    //INCLUIR EFEITO ANIMATE           
+        });
+        $("#fields").mouseover(function(){
+            $(this).animate('font-size','+=8');
+        });
+        $("#fields").mouseleave(function(){
+            $(this).animate('font-size','-=8');
+        });
+                     
 });
     });
     </script>
 </head>
 <body>
-    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;Página de Registo</h1>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Página de Registo</h1>
     <img src="https://websitesetup.org/wp-content/uploads/2016/07/Start-Here.png">
-    <p id="nome">Nome: <input type="text" name="NomeCompleto"></p>
-    <p id="email">Email: <input id="cx_email" type="text" name="email"></p>
-    <p id="login">Login: <input id="cx_login" type="text" name="login"></p>
-    <p id="pass">Senha do user: <input id="cx_pass" type="password" name="pass"></p>
+    <div id="fields">
+        <p id="nome">Nome: <input type="text" name="NomeCompleto"></p>
+        <p id="email">Email: <input id="cx_email" type="text" name="email"></p>
+        <p id="login">Login: <input id="cx_login" type="text" name="login"></p>
+        <p id="pass">Senha do user: <input id="cx_pass" type="password" name="pass"></p>
+    </div>
 </body>
 </html>

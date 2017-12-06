@@ -8,21 +8,17 @@
         $("#nome").hide();
         $("#email").hide();
         $("#login").hide();
-        $("#pass").hide();
-             
+        $("#pass").hide();          
         $("input").focus(function(){
             $(this).css("background-color","#ff69b4");
         });
         $("input").blur(function(){
             $(this).css("background-color","#ffffff");
-        });  
-        
-
-       $("img").click(function() {
+        });
+        $("img").click(function() {
             $( "img" ).slideUp( "slow", function() { 
                 $("#nome").show();
-            });
- 
+            }); 
         $("#nome").change(function(){
             $("#email").show();
             $("#cx_email").focus();
@@ -41,9 +37,8 @@
             $("#login").fadeOut(5000);
             $("#pass").fadeOut(10000);
             $("img").slideDown( 10000 ); //.slideUp( 300 ).delay( 800 ).fadeIn( 400 );          
-        });  
-                    
-    //INCLUIR EFEITO ANIMATE           
+        });
+        //INCLUIR EFEITO ANIMATE           
 });
     });
     </script>
